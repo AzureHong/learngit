@@ -1,0 +1,11 @@
+Git is a distributed version control system.
+Git is free software distributed under the GPL.
+Git has a mutable index called stage.
+
+# 同步远程仓库与本地仓库之间的关联关系
+git remote add origin git@github.com:AzureHong/learngit.git
+                      
+git remote add origin https://github.com/AzureHong/learngit.git
+
+# 推送本地库中的内容到远程库上
+git push -u origin master
