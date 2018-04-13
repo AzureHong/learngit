@@ -29,11 +29,8 @@ $ git remote add origin git@github.com:AzureHong/learngit.git
 后续只需要使用： git push origin master 推送最新修改
 
 在同步GitHub的过程中，错出现ssh连接错误的处理情况
-	1. 
-    git命令下： ssh-keygen -t rsa -C "git用户名" 
-	2. 
-  三下回车
-	3. 
-复制keys ，添加到对应的GitHub中，重新关联，推送服务，即可
+	1. git命令下： ssh-keygen -t rsa -C "git用户名" 
+	2. 三下回车
+	3. 复制keys ，添加到对应的GitHub中，重新关联，推送服务，即可
 
 
