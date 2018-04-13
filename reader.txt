@@ -7,5 +7,33 @@ git remote add origin git@github.com:AzureHong/learngit.git
                       
 git remote add origin https://github.com/AzureHong/learngit.git
 
+git remote add origingit@github.com:AzureHong/learngit.git
+
 # 推送本地库中的内容到远程库上
 git push -u origin master
+
+
+场景1：当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令git checkout -- file。
+场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令git reset HEAD file，就回到了场景1，第二步按场景1操作。
+场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退一节，不过前提是没有推送到远程库。
+
+git rm xxx 删除库中的文件
+
+git checkout XXX 检出对应版本的文件，适用于本地删除文件后，用库中的版本恢复
+
+根据GitHub的提示，在本地库下运行，将远程仓库与本地建立关联关系
+$ git remote add origin git@github.com:AzureHong/learngit.git
+
+第一次推送全部内容： git push -u origin master
+
+后续只需要使用： git push origin master 推送最新修改
+
+在同步GitHub的过程中，错出现ssh连接错误的处理情况
+	1. 
+    git命令下： ssh-keygen -t rsa -C "git用户名" 
+	2. 
+  三下回车
+	3. 
+复制keys ，添加到对应的GitHub中，重新关联，推送服务，即可
+
+
